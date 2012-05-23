@@ -1,6 +1,6 @@
 /*
 Desire Revon
-VFW Project 3
+VFW Project 4
 Term:1205
 I Remember Mobile Application
 */
@@ -12,6 +12,18 @@ background-repeat:no-repeat;
 background-size:cover;
 }
 
+h1{
+    border: 3px solid #a1a1a1;
+    padding: 10px 15px;
+    background-color: #666;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-radius:20px;
+
+}
+
 form{
 	background-color: #D1D1D1;
 }
@@ -19,25 +31,14 @@ form{
 
 span{
 	color: #000000;
-	font: 0.9em Arial, "century gothic", sans-serif;
+	font: Arial, "century gothic", sans-serif;
 	font-style: italic;
 }
 
-body{
-
-border-style:solid;
-border-width:5px;
-}
-input:focus, textarea:focus, select:focus {
- background: #CAFF70;
- border: 2px solid cyan
-}
-
-
 p{
- text-align: center;
- position:relative;
- bottom: 40px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 18px;
 }
 
 
@@ -52,39 +53,45 @@ h1{
 
 fieldset{
 	font: 16px century gothic;
-	border: 2px solid #bbb;
-	padding: 20px;
+	border: 10px solid #bbb;
+	padding:20px;
 }
 
 legend{
 	color: Black;
 	font-weight: bold;
-	border-top: 1px solid #bbb;
-	border-left: 1px solid #bbb;
-	border-right: 1px solid #bbb;
-	padding: 10px 15px;
-	
+	border-top: 1px solid #2F4F4F;
+	border-left: 1px solid #2F4F4F;
+	border-right: 1px solid #2F4F4F;
+	border-bottom: 1px solid #2F4F4F;
+    padding: 5px 5px;
+    background-color:#2F4F4F;
+    border: 5px solid #BEBEBE;
 }
-
-
 
 
 input{
 	font: 12px century gothic;
 	color: #555;
 	margin: 10px;
+	
+}
+
+textarea:focus, input:focus { 
+border: 1px solid #900; 
+background-color: #7FFF00; 
 }
 
 textarea{
 	width: 75%;
 	font: 12px century gothic;
 	color: #555;
-	height: 100px;
-	line-height: 20px;
-	margin-top: 10px;
+	height: 50px;
+	line-height: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+
 }
-
-
 
 a{
 	font: 16px century gothic;
@@ -93,10 +100,6 @@ a{
 }
 
 a:hover{
-	color:green;
+	color:#2F4F4F;
 	
 }
-
-
-
-
