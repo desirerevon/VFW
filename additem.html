@@ -1,0 +1,75 @@
+<!--Doctype html-->
+<!--Desire Revon-->
+<!--VFW Project 2-->
+<!--Term:1205-->
+<!--I Remember Mobile Application-->
+<html>	
+	<!--Html header will consist of information about our application or webpage-->
+	<head>
+
+		<!--Character Set-->
+		<meta charset ="utf-8" />
+		<meta name = "description" content = "Hmtl5 Document" />
+		<meta name = "keywords" content = "HTML5, Mobile Development, Full Sail University" />
+		<meta name = "robots" content = "index, follow" />
+		<meta name = "viewport" content = "user-scalable=no, width=device-width" />
+		<meta name = "HandheldFriendly" content = "true" />
+		<meta name = "MobileOptimized" content = "320" />
+
+		<!--Document Title Tag-->
+		<title>An Elephant Never Forgets</title>
+		<!--CSS-->
+		<link href= "style.css" rel= "stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header><h1><img src="http://i99.photobucket.com/albums/l312/desire_022_2006/iphoneLogo.png" width="150"></h1></header>
+		<header>
+			<!---Note This Application Header Title <h1>-->
+			<h1 id="title">I Remember</h1>
+			<p>"An elephant never forgets" </p>
+		</header>
+		<!--Form Starts-->
+		<form action="#" method="post" id="friendForm">
+				<!--Began Fieldset-->
+				<fieldset id="login">
+					<legend>Enter Your Login Information Here</legend>
+					<!--Note required field-->
+					<span>*Required Fields</span>
+				    <ul id="errors"></ul>
+					<!--Unordered list that creates bullets next to each unput label-->
+					<ul id="Log In">
+						<li><label for="username">*User Name:</label><input  type="text" id="username" placeholder="user name"/></li>
+						<li><label for="password">*Password:</label><input type="password" id="password" placeholder="password"/></li>
+					</ul>
+			<!--Drop Down-->
+		<h2>Friend Information</h2>
+		<!---Friend Info Header Title <h2>-->
+			<fieldset id="fieldSet">
+				<legend>Remember This</legend>
+					<li id="select"><label for="friend">Select Friend:</label><br /></li>
+					<span>Is this the right friend:</span>
+					<li><input type="checkbox" id ="fav" value="Yes" class="checkbox" /><label for="fav">Yes</label></li>
+					<li><label for="importance">Importance:</label>
+						<ul class="checkbox">
+							<li><input type="radio" id="Really Important"   value="Really Important" name="importance" /><label for="Really Important">Really Important</label></li>
+							<li><input type="radio" id="I can't remember everything"  value="I can't remember everything" name="importance" /><label for="I can't remember everything">I can't remember everything</label></li>
+						</ul>
+					</li>
+					<li><label for="reminder:">Remind me this many times(1-10):</label><input type="range" id="reminder" min="1" max="10" /></li>
+					<br>
+					<li><label for="date">Remind Me On This Day:</label><input type="date" id="date" /></li>
+					<li><label for="notes">Note:</label><textarea id="notes" placeholder="Type Here" /></textarea></li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Save Note" id="save"/><br />
+			</fieldset>
+		</form>
+			<nav>
+				<a href="#" id="clear">Clear</a>
+				<a href="#" id="display">Display Data</a>
+				<a href ="additem.html" id = "addNew" style = "display: none;" >Add New Note</a>
+			</nav>
+		<script src="json.js" type="text/javascript"></script>	
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>

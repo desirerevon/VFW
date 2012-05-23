@@ -1,0 +1,102 @@
+/*
+Desire Revon
+VFW Project 3
+Term:1205
+I Remember Mobile Application
+*/
+
+html{
+font-family:century gothic, sans serif;
+background-image:url(http://www.bibleclipart.net/images/christian-clip-art-kids.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+form{
+	background-color: #D1D1D1;
+}
+
+
+span{
+	color: #000000;
+	font: 0.9em Arial, "century gothic", sans-serif;
+	font-style: italic;
+}
+
+body{
+
+border-style:solid;
+border-width:5px;
+}
+input:focus, textarea:focus, select:focus {
+ background: #CAFF70;
+ border: 2px solid cyan
+}
+
+
+p{
+ text-align: center;
+ position:relative;
+ bottom: 40px;
+}
+
+
+h1{
+	font: 30px century gothic;
+	font-weight: bold;
+    color: #000000;
+	padding: 10px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+fieldset{
+	font: 16px century gothic;
+	border: 2px solid #bbb;
+	padding: 20px;
+}
+
+legend{
+	color: Black;
+	font-weight: bold;
+	border-top: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	padding: 10px 15px;
+	
+}
+
+
+
+
+input{
+	font: 12px century gothic;
+	color: #555;
+	margin: 10px;
+}
+
+textarea{
+	width: 75%;
+	font: 12px century gothic;
+	color: #555;
+	height: 100px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+
+
+a{
+	font: 16px century gothic;
+	color: blue;
+	text-align: center;
+}
+
+a:hover{
+	color:green;
+	
+}
+
+
+
+
