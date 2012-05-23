@@ -116,22 +116,31 @@ window.addEventListener("DOMContentLoaded", function() {
         for(var i = 0, len=localStorage.length; i < len; i++){
             var makeli = document.createElement("li");
             var linksLi = document.createElement("li");
-            	makeList.appendChild(makeli);
+            makeList.appendChild(makeli);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             //Convert the string from local storage value back to an object using JSON.parse()
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
-            	makeli.appendChild(makeSubList);
+            makeli.appendChild(makeSubList);
+            getImage(makeSubList);
             for(var n in obj){
             var makeSubli = document.createElement("li");
-                	makeSubList.appendChild(makeSubli);
+            makeSubList.appendChild(makeSubli);
             var optSubText = obj[n][0] + " " + obj[n][1];
-                	makeSubli.innerHTML = optSubText;
-                	makeSubList.appendChild(linksLi); 
+            makeSubli.innerHTML = optSubText;
+            makeSubList.appendChild(linksLi); 
             }
             makeItemLinks(localStorage.key(i), linksLi); //Create edit and delete buttons/links for each item in local storage.
         }
+    }
+    //Get the image for the right friend that's being displayed.
+    function getImage (makeSubList) {
+	 	var imageLi = document.createElement('li');
+	 	makeSubList.appendChild(imageLi);
+	 	var newImg = document.createElement('img');
+	 	var setSrc = newImg.setAttribute("src", "/images.png");
+	 	imageLi.appendChild(newImg);
     }
     
      function autoFillData() {
