@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", function() {
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
             makeli.appendChild(makeSubList);
-            getImage(makeSubList);
+            getImage(obj.friend[1], makeSubList);
             for(var n in obj){
             var makeSubli = document.createElement("li");
             makeSubList.appendChild(makeSubli);
@@ -135,13 +135,14 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     }
     //Get the image for the right friend that's being displayed.
-    function getImage (makeSubList) {
-	 	var imageLi = document.createElement('li');
-	 	makeSubList.appendChild(imageLi);
-	 	var newImg = document.createElement('img');
-	 	var setSrc = newImg.setAttribute("src", "/images.png");
-	 	imageLi.appendChild(newImg);
-    }
+   function getImage(imgName, makeSubList) {
+		var imageLi = document.createElement('li');
+		makeSubList.appendChild(imageLi);
+		var newImage = document.createElement('img');
+		var setSrc = newImage.setAttribute("src", "images/" + imgName + ".png");
+		newImage.style.paddingTop = "10px";
+		imageLi.appendChild(newImage);
+	}
     
      function autoFillData() {
 		// The actual actual JSON OBJECT data required for this to work is coming from out JSON. js file which is loaded to out HTML page.
