@@ -24,6 +24,15 @@ h1{
 
 }
 
+h1{
+	font: 30px century gothic;
+	font-weight: bold;
+    color: #000000;
+	padding: 10px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
 form{
 	background-color: #D1D1D1;
 }
@@ -35,26 +44,16 @@ span{
 	font-style: italic;
 }
 
-p{
-    margin: 10px 5px;
-    text-align: center;
-    font-size: 18px;
-}
-
-
-h1{
-	font: 30px century gothic;
-	font-weight: bold;
-    color: #000000;
-	padding: 10px;
-	text-transform: capitalize;
-	text-align: center;
-}
-
 fieldset{
 	font: 16px century gothic;
 	border: 10px solid #bbb;
 	padding:20px;
+}
+
+p{
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 18px;
 }
 
 legend{
@@ -102,4 +101,8 @@ a{
 a:hover{
 	color:#2F4F4F;
 	
+}
+
+img{
+
 }
